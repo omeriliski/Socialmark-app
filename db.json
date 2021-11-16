@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "fullname": "ali iliski",
+      "username": "ali",
+      "password": "a92020f9291a5a78a871ff7ea0a21020fd48f124",
+      "id": 2,
+      "likes": [
+        2,
+        7
+      ]
+    },
+    {
+      "fullname": "omer iliski",
+      "username": "omer",
+      "password": "60e747fa355405f43b2528af3fb9a871faba67f4",
+      "id": 3,
+      "likes": [
+        4,
+        7,
+        6
+      ],
+      "bookmarks": []
+    }
+  ],
+  "bookmarks": [
+    {
+      "title": "Vue documents",
+      "url": "https://v3.vuejs.org",
+      "categoryId": 1,
+      "description": "vuejs description text",
+      "userId": 3,
+      "created_at": "2021-11-14T13:19:06.363Z",
+      "id": 2
+    },
+    {
+      "title": "react",
+      "url": "react.org",
+      "categoryId": 2,
+      "description": "react text",
+      "userId": 3,
+      "created_at": "2021-11-14T13:25:05.823Z",
+      "id": 3
+    },
+    {
+      "title": "aws",
+      "url": "aws.org",
+      "categoryId": 5,
+      "description": "aws is useful",
+      "userId": 3,
+      "created_at": "2021-11-14T13:35:10.951Z",
+      "id": 4
+    },
+    {
+      "title": "nodejs",
+      "url": "nodejs.org",
+      "categoryId": 4,
+      "description": "nodejs is the future",
+      "userId": 3,
+      "created_at": "2021-11-14T13:47:25.460Z",
+      "id": 5
+    },
+    {
+      "title": "films",
+      "url": "films.org",
+      "categoryId": 6,
+      "description": "en süper filmler",
+      "userId": 3,
+      "created_at": "2021-11-14T14:00:30.993Z",
+      "id": 6
+    },
+    {
+      "title": "mongoDB",
+      "url": "mongoDB.org",
+      "categoryId": 4,
+      "description": "mogoDB is more important",
+      "userId": 2,
+      "created_at": "2021-11-14T18:16:21.999Z",
+      "id": 7
+    }
+  ],
+  "categories": [
+    {
+      "name": "Vue.js",
+      "id": 1
+    },
+    {
+      "name": "React.js",
+      "id": 2
+    },
+    {
+      "name": "Frontend",
+      "id": 3
+    },
+    {
+      "name": "Backend",
+      "id": 4
+    },
+    {
+      "name": "Cloud",
+      "id": 5
+    },
+    {
+      "name": "Sosyal yasam",
+      "id": 6
+    }
+  ]
+}
