@@ -54,6 +54,7 @@ export default {
       .then(res=>{
         console.log(res);
         Object.keys(this.userData)?.forEach(field=>this.userData[field]=null);
+        this.$socket.emit("NEW_BOOKMARK_EVENT",res.data);  //send Data to the socket
         this.$router.push({name:"HomePage"});
       });
     }

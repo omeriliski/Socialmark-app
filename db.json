@@ -7,7 +7,10 @@
       "id": 2,
       "likes": [
         2,
-        7
+        7,
+        10,
+        12,
+        14
       ]
     },
     {
@@ -20,14 +23,20 @@
         6,
         2,
         3,
-        4
+        4,
+        13,
+        12,
+        11
       ],
       "bookmarks": [
         2,
         3,
-        4,
         7,
-        6
+        6,
+        4,
+        16,
+        15,
+        14
       ]
     }
   ],
@@ -85,6 +94,87 @@
       "userId": 2,
       "created_at": "2021-11-14T18:16:21.999Z",
       "id": 7
+    },
+    {
+      "title": "html",
+      "url": "http://html.org",
+      "categoryId": 3,
+      "description": "adadadasdaw",
+      "userId": 3,
+      "created_at": "2021-11-18T15:19:22.211Z",
+      "id": 8
+    },
+    {
+      "title": "css",
+      "url": "css.org",
+      "categoryId": 3,
+      "description": "sfsfsf",
+      "userId": 3,
+      "created_at": "2021-11-18T15:21:05.065Z",
+      "id": 9
+    },
+    {
+      "title": "sql",
+      "url": "sql.org",
+      "categoryId": 4,
+      "description": "dasdada",
+      "userId": 3,
+      "created_at": "2021-11-18T15:22:14.729Z",
+      "id": 10
+    },
+    {
+      "title": "tableau",
+      "url": "tableau.org",
+      "categoryId": 4,
+      "description": "dsadasd",
+      "userId": 3,
+      "created_at": "2021-11-18T15:52:11.173Z",
+      "id": 11
+    },
+    {
+      "title": "powerbi",
+      "url": "powerbi.org",
+      "categoryId": 4,
+      "description": "dasdada",
+      "userId": 2,
+      "created_at": "2021-11-18T15:54:39.144Z",
+      "id": 12
+    },
+    {
+      "title": "oracle",
+      "url": "oracle.org",
+      "categoryId": 4,
+      "description": "ooaksodkaödk",
+      "userId": 2,
+      "created_at": "2021-11-18T15:55:35.372Z",
+      "id": 13
+    },
+    {
+      "title": "test",
+      "url": "test.org",
+      "categoryId": 5,
+      "description": "test cloud",
+      "userId": 2,
+      "created_at": "2021-11-18T15:56:24.448Z",
+      "id": 14
+    },
+    {
+      "title": "test2",
+      "url": "test2.org",
+      "categoryId": 4,
+      "description": "adsdada",
+      "userId": 3,
+      "created_at": "2021-11-18T15:57:52.542Z",
+      "id": 15
+    },
+    {
+      "title": "test3",
+      "url": "test3.org",
+      "categoryId": 5,
+      "description": "dadsad",
+      "userId": 2,
+      "created_at": "2021-11-18T15:58:11.402Z",
+      "id": 16
     }
   ],
   "categories": [

@@ -20,14 +20,20 @@ export default {
             bookmarkList:[]
         }
     },
-    
+    mounted() {
+        this.$socket.on("NEW_BOOKMARK_ADDED",this.fetchData)
+    },
     created() {
-        this.$appAxios.get("/bookmarks?_expand=category&_expand=user").then(res=>{
-            console.log(res);
-            this.bookmarkList=res.data;
-        })
+        this.fetchData();
+        
     },
     methods: {
+        fetchData(){
+            this.$appAxios.get("/bookmarks?_expand=category&_expand=user").then(res=>{
+                console.log(res);
+                this.bookmarkList=res.data;
+        })
+        },
         updateBookmarkList(categoryId){
             const url= categoryId ? `/bookmarks?_expand=category&_expand=user&categoryId=${categoryId}`:`/bookmarks?_expand=category&_expand=user`
             this.$appAxios.get(url).then(res=>{

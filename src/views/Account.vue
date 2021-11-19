@@ -3,9 +3,9 @@
         <AppHeader/>
         <div class="flex flex-row">
             <SideBar/>
-            <div class="socket">
+            <!-- <div class="socket">
                 <input type="text" @keydown.enter="SEND_MESSAGE">
-            </div>
+            </div> -->
             <!-- <component :is="$route.meta.componentName" :items="bookmarkList"/> -->
             <!-- {{$log("route",$route)}} -->
             <!-- <AppBookmarkList v-if="bookmarkList.length>0" :items="bookmarkList"/>
@@ -17,7 +17,7 @@
 <script>
 import AppHeader from "@/components/shared/appHeader";
 import SideBar from "@/components/Account/sideBar";
-import io from "socket.io-client";
+
 export default {
     components:{
         SideBar,
@@ -26,7 +26,6 @@ export default {
     data() {
         return {
             bookmarkList:[],
-            socket:{}
         };
     },
     
@@ -37,16 +36,16 @@ export default {
         })
     },
     mounted() {
-        this.socket=io("http://localhost:2021");
-        this.socket.on("WELCOME_MESSAGE",this.WELCOME_MESSAGE);
+        
+        this.$socket.on("WELCOME_MESSAGE",this.WELCOME_MESSAGE);
     },
-    methods: {
-        WELCOME_MESSAGE(data){
-            console.log(data);
-        },
-        SEND_MESSAGE(e){
-            this.socket.emit("MESSAGE", e.target.value);
-        }
-    },
+    // methods: {
+    //     WELCOME_MESSAGE(data){
+    //         console.log(data);
+    //     },
+    //     SEND_MESSAGE(e){
+    //         this.$socket.emit("MESSAGE", e.target.value);
+    //     }
+    // },
 }
 </script>
